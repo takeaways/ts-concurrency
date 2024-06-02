@@ -1,0 +1,15 @@
+{
+  "name": "ts-concurrency",
+  "packageManager": "yarn@4.2.2",
+  "devDependencies": {
+    "nodemon": "^3.1.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  },
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc -w",
+    "dev": "nodemon --watch src/ --delay 500ms --exec ts-node src/main.ts",
+    "start": "NODE_ENV=production node build/start.js"
+  }
+}
